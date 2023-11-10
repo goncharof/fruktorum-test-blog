@@ -1,7 +1,7 @@
 {
   "name": "amanha",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -11,10 +11,10 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^1.1.0",
-    "eslint": "^8.53.0",
-    "sass": "^1.69.5",
     "@nuxt/devtools": "latest",
+    "eslint": "^8.53.0",
     "nuxt": "^3.8.1",
+    "sass": "^1.69.5",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
