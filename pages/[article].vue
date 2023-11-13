@@ -23,6 +23,18 @@ console.log(data.value.body)
 
 <template>
   <div>
-    <component :is="blocks[block.type] ?? null" v-for="block in data.body" :key="block.id" :data="block.data" />
+    <component
+      :is="blocks[block.type] ?? null"
+      v-for="block in data.body"
+      :key="block.id"
+      :data="block.data"
+      class="block-holder"
+    />
   </div>
 </template>
+
+<style scoped>
+.block-holder {
+  padding: 10px;
+}
+</style>

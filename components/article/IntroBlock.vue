@@ -40,6 +40,8 @@ defineProps<{
 .block__image img {
   border-radius: 16px;
   display: block;
+  overflow: hidden;
+  height: 100%;
   width: 100%;
 }
 .content {
@@ -49,5 +51,8 @@ defineProps<{
 }
 .content__short-description {
   color: black;
+}
+.content p {
+  padding: 10px;
 }
 </style>

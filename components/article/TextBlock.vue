@@ -5,5 +5,5 @@ defineProps<{
 </script>
 
 <template>
-  <div v-html="data" />
+  <div class="text-secondary" v-html="data" />
 </template>
