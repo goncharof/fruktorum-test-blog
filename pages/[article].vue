@@ -20,9 +20,8 @@ const blocks: any = {
   slider_block: defineAsyncComponent(() => import('@/components/article/SliderBlock.vue')),
   subscribe_form_block: defineAsyncComponent(() => import('@/components/SubscribeForm.vue')),
   article_list_block: defineAsyncComponent(() => import('@/components/article/ListBlock.vue')),
+  cta_form_block: defineAsyncComponent(() => import('@/components/CtaForm.vue')),
 }
-
-console.log(data.value.body)
 </script>
 
 <template>
@@ -40,6 +39,7 @@ console.log(data.value.body)
 <style scoped>
 .block-holder {
   padding: 10px;
+  margin: auto;
 }
 .subscribe-row-container {
   margin: 10px;

@@ -6,7 +6,7 @@ import socialIcons from '~/assets/img/social.svg?raw'
 <template>
   <div class="page-layout">
     <div class="nav-header">
-      <div class="logo" v-html="logo" />
+      <div class="logo" @click="$router.push('/')" v-html="logo" />
     </div>
     <div class="page-body">
       <slot />
@@ -21,7 +21,7 @@ import socialIcons from '~/assets/img/social.svg?raw'
             </p>
           </div>
         </div>
-        <div class="page-footer__column page-footer__column_center">
+        <div class="page-footer__column page-footer__column_bottom">
           <div>
             <p class="text-secondary">
               email
@@ -46,16 +46,21 @@ import socialIcons from '~/assets/img/social.svg?raw'
 .page-body {
   flex:1;
 }
+.page-footer {
+  border-top: 1px solid black;
+}
 .nav-header {
   background-color: white;
   display: flex;
   align-items: center;
   height: 85px;
+  padding: 20px;
 }
 .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 .page-footer__row {
   display: flex;
@@ -72,9 +77,11 @@ import socialIcons from '~/assets/img/social.svg?raw'
   flex: 1;
   padding: 10px;
 }
-.page-footer__column_center {
-  justify-content: center;
+.page-footer__column_bottom {
   display: flex;
+    align-items: self-end;
+    flex-direction: column;
+    justify-content: end;
 }
 .page-footer-row-bottom__text {
   margin-right: 10px; /* Adjust the margin as needed */

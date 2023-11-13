@@ -1,3 +1,4 @@
+import type { container } from '@nuxt/ui';
 import type { container } from '@nuxt/ui/dist/runtime/ui.config';
 <script setup lang="ts">
 defineProps<{
@@ -17,6 +18,11 @@ defineProps<{
 </template>
 
 <style scoped>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container__image {
   width: 100%;
   aspect-ratio: 14 / 9;

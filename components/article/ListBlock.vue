@@ -21,7 +21,7 @@ defineProps<{
 
 <style>
 .card {
-  max-width: 30%;
+  /* max-width: 30%; */
 }
 .list-block {
   display: flex;

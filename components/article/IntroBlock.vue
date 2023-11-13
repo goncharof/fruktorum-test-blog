@@ -30,29 +30,37 @@ defineProps<{
 }
 .block__image {
   aspect-ratio: 1;
-  background: var(--background-gradient);
   border-radius: 16px;
   box-sizing: border-box;
   min-width: 30%;
-  width: 30%;
+  width: 40%;
   margin-right: 20px;
 }
 .block__image img {
   border-radius: 16px;
   display: block;
   overflow: hidden;
-  height: 100%;
-  width: 100%;
 }
 .content {
   flex: 2;
   margin-top: 20px;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .content__short-description {
   color: black;
 }
 .content p {
   padding: 10px;
+}
+@media (max-width: 400px) {
+  .block {
+    flex-direction: column;
+  }
+  .block__image {
+    width: 100%;
+  }
 }
 </style>

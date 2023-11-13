@@ -30,9 +30,11 @@ defineProps<{
   width: 100%;
   width: 427px;
   padding: 16px;
+  max-width:100%;
   }
 .card__image {
   width: 427px;
+  max-width:100%;
   height: 320px;
   min-width: 300px;
   overflow: hidden;
@@ -49,5 +51,8 @@ h2 {
 }
 .card__text {
   padding-bottom: 16px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 30px;
 }
 </style>
