@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '~/node_modules/reset-css/reset.css',
     '~/assets/css/variables.css',
     '~/assets/css/global.css',
+    '~/assets/css/transitions.css',
   ],
 
   app: {
