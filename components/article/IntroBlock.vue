@@ -39,6 +39,7 @@ defineProps<{
   border-top-right-radius: 40%;
   display: block;
   overflow: hidden;
+  max-width: 100%;
 }
 .content {
   flex: 2;

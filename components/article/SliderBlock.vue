@@ -15,7 +15,7 @@ const settings = {
 <template>
   <Carousel v-bind="settings" class="carousel">
     <Slide v-for="image in data" :key="image">
-      <div>
+      <div class="carousel">
         <img :src="image">
       </div>
     </Slide>
@@ -28,6 +28,9 @@ const settings = {
 </template>
 
 <style scope>
+.carousel {
+  width: 100%;
+}
 .block-holder.carousel {
   padding-left: 0;
   padding-right: 0;

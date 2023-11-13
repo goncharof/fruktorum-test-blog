@@ -45,6 +45,7 @@ defineProps<{
 .card-image {
   object-fit: cover;
   margin-bottom: 16px;
+  max-width: 100%;
 }
 h2 {
   display: inline-block;
