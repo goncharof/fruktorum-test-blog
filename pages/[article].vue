@@ -40,6 +40,7 @@ const blocks: any = {
 .block-holder {
   padding: 10px;
   margin: auto;
+  max-width: 600px;
 }
 .subscribe-row-container {
   margin: 10px;

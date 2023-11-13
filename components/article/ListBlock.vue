@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <div>
+  <div class="list-holder">
     <h1>{{ data.title }}</h1>
     <div class="list-block">
       <ArticleCard
@@ -20,12 +20,12 @@ defineProps<{
 </template>
 
 <style>
-.card {
-  /* max-width: 30%; */
+.block-holder.list-holder {
+  max-width: 90%;
 }
 .list-block {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 </style>
