@@ -10,7 +10,25 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <slot />
+  <div class="card-container">
+    <ArticleCard
+      v-for="article in data.body[0].data.articles"
+      :key="article.link"
+      :image-url="article.image"
+      :card-text="article.title"
+    />
   </div>
 </template>
+
+<style scoped>
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  min-width: 30%;
+  margin-bottom: 20px;
+}
+</style>
