@@ -1,0 +1,33 @@
+html,
+body,
+body > div#__nuxt,
+body > div#__nuxt > div:first-child
+{
+  height: 100%;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
+}
+body {
+  background-color: white;
+}
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+h2 {
+  height: 22px;
+  color: black;
+}
+input {
+  flex-grow: 1;
+  margin-right: 10px;
+  border: none;  /* Removes default border */
+  border-bottom: 1px solid gray;  /* Adds underline */
+  color: gray;  /* Changes text color to gray */
+  background: transparent;  /* Makes background transparent */
+  outline: none;  /* Removes focus outline */
+  transition: border-bottom-color 0.3s;
+}
+input:focus, input:active {
+  color: white;
+  border-bottom-color: aqua;
+}
