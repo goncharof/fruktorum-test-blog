@@ -13,7 +13,7 @@ defineProps<{
     <div class="card__text">
       <h2>{{ cardText }}</h2>
     </div>
-    <div class="card-content">
+    <div>
       <button class="card-button btn-black">
         Читать
       </button>
@@ -48,10 +48,6 @@ defineProps<{
 .card-image {
   object-fit: cover;
   margin-bottom: 16px;
-}
-
-.card-content {
-  text-align: center;
 }
 h2 {
   display: inline-block;
