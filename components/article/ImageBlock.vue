@@ -21,7 +21,7 @@ defineProps<{
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 .container__image {
   width: 100%;
@@ -30,6 +30,7 @@ defineProps<{
 .container__image img {
   height: 100%;
   max-width: 100%;
+  border-top-right-radius: 40%;
 }
 .container__caption {
   text-align: end;

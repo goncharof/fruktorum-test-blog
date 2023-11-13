@@ -30,14 +30,13 @@ defineProps<{
 }
 .block__image {
   aspect-ratio: 1;
-  border-radius: 16px;
   box-sizing: border-box;
   min-width: 30%;
   width: 40%;
   margin-right: 20px;
 }
 .block__image img {
-  border-radius: 16px;
+  border-top-right-radius: 40%;
   display: block;
   overflow: hidden;
 }

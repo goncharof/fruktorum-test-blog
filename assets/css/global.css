@@ -11,6 +11,8 @@ body {
   background-color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .text-secondary {
   color: var(--color-text-secondary);

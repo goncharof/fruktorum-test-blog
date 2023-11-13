@@ -40,8 +40,8 @@ import socialIcons from '~/assets/img/social.svg?raw'
 
 <style scoped>
 .page-layout {
-    display: flex;
-    flex-direction:column;
+  display: flex;
+  flex-direction:column;
 }
 .page-body {
   flex:1;
@@ -84,11 +84,15 @@ import socialIcons from '~/assets/img/social.svg?raw'
     justify-content: end;
 }
 .page-footer-row-bottom__text {
-  margin-right: 10px; /* Adjust the margin as needed */
+  margin-right: 10px;
 }
-
 .page-footer-row-bottom__input {
   flex-grow: 1;
-  margin-right: 10px; /* Add margin to separate input and button */
+  margin-right: 10px;
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 14px;
+  }
 }
 </style>
