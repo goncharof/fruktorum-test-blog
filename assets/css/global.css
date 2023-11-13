@@ -9,12 +9,13 @@ body > div#__nuxt > div:first-child
 }
 body {
   background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 .text-secondary {
   color: var(--color-text-secondary);
 }
 h2 {
-  height: 22px;
   color: black;
 }
 h1 {
@@ -45,7 +46,7 @@ button, .button {
   font-size: 16px;
   transition: background-color 0.4s;
   cursor: pointer;
-  padding: 15px 32px;
+  padding: 8px;
   border-radius: 4px;
 }
 .btn-black {
