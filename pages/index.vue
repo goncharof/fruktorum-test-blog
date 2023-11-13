@@ -16,6 +16,7 @@ useHead({
       :key="article.link"
       :image-url="article.image"
       :card-text="article.title"
+      :card-link="article.link"
     />
   </div>
 </template>
