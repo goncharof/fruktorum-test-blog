@@ -1,0 +1,31 @@
+<script setup lang="ts">
+defineProps<{
+  data: any
+}>()
+</script>
+
+<template>
+  <div class="subscribe-row-container">
+    <div>
+      Подпишись на рассылку
+    </div>
+    <div>
+      <input type="text" placeholder="Email">
+      <button class="btn-blue">
+        Подписаться
+      </button>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.subscribe-row-container {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+</style>

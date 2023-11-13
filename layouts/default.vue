@@ -33,17 +33,7 @@ import socialIcons from '~/assets/img/social.svg?raw'
           </div>
         </div>
       </div>
-      <div class="page-footer__row page-footer-row-bottom">
-        <div class="page-footer-row-bottom__text">
-          Подпишись на рассылку
-        </div>
-        <div>
-          <input class="page-footer-row-bottom__input" type="text" placeholder="Email">
-          <button class="page-footer-row-bottom__button btn-blue">
-            Подписаться
-          </button>
-        </div>
-      </div>
+      <SubscribeForm class="page-footer-row-bottom" />
     </footer>
   </div>
 </template>
@@ -66,9 +56,6 @@ import socialIcons from '~/assets/img/social.svg?raw'
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-.page-footer {
-  padding: 20px;
 }
 .page-footer__row {
   display: flex;
