@@ -18,6 +18,8 @@ const blocks: any = {
   text_block: defineAsyncComponent(() => import('@/components/article/TextBlock.vue')),
   image_block: defineAsyncComponent(() => import('@/components/article/ImageBlock.vue')),
   slider_block: defineAsyncComponent(() => import('@/components/article/SliderBlock.vue')),
+  subscribe_form_block: defineAsyncComponent(() => import('@/components/SubscribeForm.vue')),
+  article_list_block: defineAsyncComponent(() => import('@/components/article/ListBlock.vue')),
 }
 
 console.log(data.value.body)
@@ -38,5 +40,8 @@ console.log(data.value.body)
 <style scoped>
 .block-holder {
   padding: 10px;
+}
+.subscribe-row-container {
+  margin: 10px;
 }
 </style>
