@@ -17,6 +17,7 @@ const blocks: any = {
   article_intro_block: defineAsyncComponent(() => import('@/components/article/IntroBlock.vue')),
   text_block: defineAsyncComponent(() => import('@/components/article/TextBlock.vue')),
   image_block: defineAsyncComponent(() => import('@/components/article/ImageBlock.vue')),
+  slider_block: defineAsyncComponent(() => import('@/components/article/SliderBlock.vue')),
 }
 
 console.log(data.value.body)
