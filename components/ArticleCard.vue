@@ -2,6 +2,7 @@
 defineProps<{
   imageUrl: string
   cardText: string
+  cardLink: string
 }>()
 </script>
 
@@ -14,9 +15,9 @@ defineProps<{
       <h2>{{ cardText }}</h2>
     </div>
     <div>
-      <button class="card-button btn-black">
+      <NuxtLink :to="cardLink" class="button card-button btn-black">
         Читать
-      </button>
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -34,14 +35,8 @@ defineProps<{
   width: 427px;
   height: 320px;
   min-width: 300px;
-  border-radius: var(--card-radius);
   overflow: hidden;
-  background: linear-gradient(
-  135deg,
-  rgba(179, 220, 237, 0.4) 0%,
-  rgba(41, 184, 229, 0.4) 50%,
-  rgba(188, 224, 238, 0.4) 100%
-  );
+  background: var(--background-gradient);
   position: relative;
   aspect-ratio: 16/9;
 }
