@@ -39,8 +39,8 @@ import socialIcons from '~/assets/img/social.svg?raw'
         </div>
         <div>
           <input class="page-footer-row-bottom__input" type="text" placeholder="Email">
-          <button class="page-footer-row-bottom__button">
-            Button
+          <button class="page-footer-row-bottom__button btn-blue">
+            Подписаться
           </button>
         </div>
       </div>
