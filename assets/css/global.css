@@ -17,6 +17,11 @@ h2 {
   height: 22px;
   color: black;
 }
+h1 {
+  color: black;
+  size: 56px;
+  font-weight: 800;
+}
 input {
   flex-grow: 1;
   margin-right: 10px;
@@ -31,7 +36,7 @@ input:focus, input:active {
   color: white;
   border-bottom-color: aqua;
 }
-button {
+button, .button {
   display: inline-block;
   border: none;
   color: white;
