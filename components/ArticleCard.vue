@@ -22,7 +22,8 @@ defineProps<{
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import "@/assets/css/variables.scss";
 .card {
   display: flex;
   flex-direction: column;
@@ -31,14 +32,14 @@ defineProps<{
   width: 427px;
   padding: 16px;
   max-width:100%;
-  }
+}
 .card__image {
   width: 427px;
   max-width:100%;
   height: 320px;
   min-width: 300px;
   overflow: hidden;
-  background: var(--background-gradient);
+  background: $background-gradient;
   position: relative;
   aspect-ratio: 16/9;
 }

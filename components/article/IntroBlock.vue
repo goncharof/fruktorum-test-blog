@@ -55,7 +55,7 @@ defineProps<{
 .content p {
   padding: 10px;
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .block {
     flex-direction: column;
   }

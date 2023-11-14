@@ -19,7 +19,7 @@ defineProps<{
 </template>
 
 <style scoped>
-.block-holder.subscribe-row-container {
+.subscribe-row-container {
   background-color: black;
   color: white;
   display: flex;

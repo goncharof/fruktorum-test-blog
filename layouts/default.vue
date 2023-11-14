@@ -38,13 +38,13 @@ import socialIcons from '~/assets/img/social.svg?raw'
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .page-layout {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
 .page-body {
-  flex:1;
+  flex: 1;
 }
 .page-footer {
   border-top: 1px solid black;
@@ -62,6 +62,7 @@ import socialIcons from '~/assets/img/social.svg?raw'
   margin-right: auto;
   cursor: pointer;
 }
+
 .page-footer__row {
   display: flex;
   padding: 20px;
@@ -79,9 +80,9 @@ import socialIcons from '~/assets/img/social.svg?raw'
 }
 .page-footer__column_bottom {
   display: flex;
-    align-items: self-end;
-    flex-direction: column;
-    justify-content: end;
+  align-items: self-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .page-footer-row-bottom__text {
   margin-right: 10px;

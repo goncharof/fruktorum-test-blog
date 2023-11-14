@@ -6,8 +6,8 @@ export default defineNuxtConfig({
 
   css: [
     '~/node_modules/reset-css/reset.css',
-    '~/assets/css/variables.css',
-    '~/assets/css/global.css',
+    '~/assets/css/variables.scss',
+    '~/assets/css/global.scss',
     '~/assets/css/transitions.css',
   ],
 

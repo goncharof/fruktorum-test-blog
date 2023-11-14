@@ -1,8 +1,9 @@
+@import "variables";
+
 html,
 body,
 body > div#__nuxt,
-body > div#__nuxt > div:first-child
-{
+body > div#__nuxt > div:first-child {
   height: 100%;
   min-height: -webkit-fill-available;
   min-height: -moz-available;
@@ -15,29 +16,31 @@ body {
   overflow-x: hidden;
 }
 .text-secondary {
-  color: var(--color-text-secondary);
+  color: $color-text-secondary;
 }
 h2 {
   color: black;
 }
 h1 {
   color: black;
-  size: 56px;
+  font-size: 26px;
   font-weight: 800;
 }
 input {
   flex-grow: 1;
   margin-right: 10px;
-  border: none;  /* Removes default border */
-  border-bottom: 1px solid gray;  /* Adds underline */
-  color: gray;  /* Changes text color to gray */
-  background: transparent;  /* Makes background transparent */
-  outline: none;  /* Removes focus outline */
+  border: none;
+  border-bottom: 1px solid gray;
+  color: gray;
+  background: transparent;
+  outline: none;
   transition: border-bottom-color 0.3s;
-}
-input:focus, input:active {
-  color: white;
-  border-bottom-color: aqua;
+
+  &:focus,
+  &:active {
+    color: white;
+    border-bottom-color: aqua;
+  }
 }
 button, .button {
   display: inline-block;
@@ -50,16 +53,18 @@ button, .button {
   cursor: pointer;
   padding: 8px;
   border-radius: 4px;
-}
-.btn-black {
-  background-color: black;
-}
-.btn-black:hover {
-  background-color: #3657D3;
-}
-.btn-blue {
-  background-color: #3657D3;
-}
-.btn-blue:hover {
-  background-color: #CDC8CF;
+
+  &.btn-black {
+    background-color: black;
+    &:hover {
+      background-color: #3657D3;
+    }
+  }
+
+  &.btn-blue {
+    background-color: #3657D3;
+    &:hover {
+      background-color: #CDC8CF;
+    }
+  }
 }
