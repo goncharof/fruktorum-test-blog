@@ -10,7 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.10.0",
     "reset-css": "^5.0.2",
     "vue3-carousel": "^0.3.1"
   },
