@@ -12,8 +12,8 @@ import socialIcons from '~/assets/img/social.svg?raw'
       <slot />
     </div>
     <footer class="page-footer">
-      <div class="page-footer__row">
-        <div class="page-footer__column">
+      <div class="page-footer-row">
+        <div class="page-footer-row__column">
           <div v-html="logo" />
           <div>
             <p class="text-secondary">
@@ -21,12 +21,12 @@ import socialIcons from '~/assets/img/social.svg?raw'
             </p>
           </div>
         </div>
-        <div class="page-footer__column page-footer__column_bottom">
+        <div class="page-footer-row__column page-footer-row__column_bottom">
           <div>
             <p class="text-secondary">
               email
             </p>
-            <h2 class="page-footer__column_bottom-email">
+            <h2 class="heading-email">
               testblogsupport@gmail.com
             </h2>
             <div class="social-icons" v-html="socialIcons" />
@@ -62,10 +62,9 @@ import socialIcons from '~/assets/img/social.svg?raw'
   margin-right: auto;
   cursor: pointer;
 }
-
-.page-footer__row {
+.page-footer-row {
   display: flex;
-  padding: 20px;
+  padding: 10px;
 }
 .page-footer-row-bottom {
   background-color: black;
@@ -74,24 +73,16 @@ import socialIcons from '~/assets/img/social.svg?raw'
   align-items: center;
   justify-content: space-between;
 }
-.page-footer__column {
-  flex: 1;
-  padding: 10px;
+.page-footer-row__column {
+  margin: 0 10px;
 }
-.page-footer__column_bottom {
+.page-footer-row__column_bottom {
   display: flex;
   align-items: self-end;
   flex-direction: column;
   justify-content: flex-end;
 }
-.page-footer-row-bottom__text {
-  margin-right: 10px;
-}
-.page-footer-row-bottom__input {
-  flex-grow: 1;
-  margin-right: 10px;
-}
-.page-footer__column_bottom-email {
+.heading-email {
   padding: 10px 0;
 }
 @media (max-width: 480px) {
