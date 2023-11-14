@@ -34,7 +34,7 @@ defineProps<{
   overflow: hidden;
   background: $background-gradient;
   position: relative;
-  aspect-ratio: 16/9;
+  aspect-ratio: 1/1;
   width: 100%;
 }
 .card-image {

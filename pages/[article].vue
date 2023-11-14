@@ -48,6 +48,6 @@ const blocks: any = {
   max-width: 600px;
 }
 .subscribe-row-container {
-  margin: 10px;
+  margin: auto;
 }
 </style>

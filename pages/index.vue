@@ -35,9 +35,10 @@ useHead({ ...data.value.meta })
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 10px;
 }
 .card {
   min-width: 30%;
-  margin-bottom: 20px;
+  justify-content: space-between;
 }
 </style>
