@@ -28,5 +28,6 @@ defineProps<{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 10px;
 }
 </style>

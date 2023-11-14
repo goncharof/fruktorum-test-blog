@@ -25,28 +25,21 @@ defineProps<{
 <style scoped lang="scss">
 @import "@/assets/css/variables.scss";
 .card {
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
-  width: 427px;
-  padding: 16px;
-  max-width:100%;
 }
 .card__image {
-  width: 427px;
-  max-width:100%;
-  height: 320px;
-  min-width: 300px;
   overflow: hidden;
   background: $background-gradient;
   position: relative;
   aspect-ratio: 16/9;
+  width: 100%;
 }
 .card-image {
   object-fit: cover;
-  margin-bottom: 16px;
-  max-width: 100%;
+  width: 100%;
 }
 h2 {
   display: inline-block;
@@ -56,5 +49,10 @@ h2 {
   font-weight: 800;
   font-size: 22px;
   line-height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
 }
 </style>
