@@ -26,7 +26,7 @@ import socialIcons from '~/assets/img/social.svg?raw'
             <p class="text-secondary">
               email
             </p>
-            <h2>
+            <h2 class="page-footer__column_bottom-email">
               testblogsupport@gmail.com
             </h2>
             <div class="social-icons" v-html="socialIcons" />
@@ -90,6 +90,9 @@ import socialIcons from '~/assets/img/social.svg?raw'
 .page-footer-row-bottom__input {
   flex-grow: 1;
   margin-right: 10px;
+}
+.page-footer__column_bottom-email {
+  padding: 10px 0;
 }
 @media (max-width: 480px) {
   h2 {
