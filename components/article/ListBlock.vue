@@ -7,7 +7,7 @@ defineProps<{
 <template>
   <div class="list-holder">
     <h1>{{ data.title }}</h1>
-    <div class="list-block">
+    <div class="list-holder__block">
       <ArticleCard
         v-for="article in data.articles"
         :key="article.link"
@@ -22,8 +22,9 @@ defineProps<{
 <style>
 .block-holder.list-holder {
   max-width: 90%;
+  text-align: center;
 }
-.list-block {
+.list-holder__block {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
