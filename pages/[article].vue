@@ -1,17 +1,22 @@
 <script setup lang="ts">
 const { params: { article } } = useRoute()
 
-const { data, error } = await useAsyncData<any>(
-  `${article}`,
-  () => useBaseFetch('/', { method: 'GET', params: { path: `/${article}` } }),
-)
+const { data, error } = await useFetch<{
+  id: string
+  body: { type: string; id: string; data: any }[]
+  meta: { title: string; description: string }
+}>('/proxy/', {
+  pick: ['body', 'meta'],
+  params: { path: `/${article}` },
+  deep: false,
+  key: `${article}`,
+  method: 'GET',
+})
 
-if (error.value)
+if (error.value || !data.value)
   throw createError({ statusCode: 404 })
 
-useHead({
-  meta: data.value.meta,
-})
+useHead({ ...data.value.meta })
 
 const blocks: any = {
   article_intro_block: defineAsyncComponent(() => import('@/components/article/IntroBlock.vue')),
@@ -28,7 +33,7 @@ const blocks: any = {
   <div>
     <component
       :is="blocks[block.type] ?? null"
-      v-for="block in data.body"
+      v-for="block in data!.body"
       :key="block.id"
       :data="block.data"
       class="block-holder"
